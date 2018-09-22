@@ -1,5 +1,6 @@
 
 # *Bessie* the Bit Bot
+*Dr Miz September 2018*
 
 Over the summer *Bessie*, previously controlled by a raspberry pi, has been rebuilt to work with a [Micro:bit](https://microbit.org)
 
@@ -9,13 +10,13 @@ Over the summer *Bessie*, previously controlled by a raspberry pi, has been rebu
 There is a simple set of functions for controlling *Bessie* in [this makecode project](https://makecode.microbit.org/_Rqtes73Du51s) 
 You can use the following functions;
 
-| Function | Purpose |
-|-----------|--------------------|
-| `forward` | Start *Bessie* moving forwards |
-| `backward` | Start *Bessie* moving backwards |
-| `stop` | Stop *Bessie* |
-| `left` | Turn *Bessie* left |
-| `right` | Turn *Bessie* right |
+| Function | Letter shown |Purpose |
+|-----------|-------|-------------|
+| `forward` | F |Start *Bessie* moving forwards |
+| `backward` | B | Start *Bessie* moving backwards |
+| `stop` | S |Stop *Bessie* |
+| `left` | L |Turn *Bessie* left |
+| `right` | R |Turn *Bessie* right |
 
 
 ## Editor?
