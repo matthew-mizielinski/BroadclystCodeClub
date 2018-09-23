@@ -80,6 +80,8 @@ You may also find the following links helpful:
  * 1 [Breadboard adapter for Micro:bit](https://coolcomponents.co.uk/collections/micro-bit/products/bbc-micro-bit-breadboard-adapter)
  * A cheap breadboard is used to seat the breadboard adapter on *Bessie*, but it isn't used (and isn't good at making connections anyway)
  * 2 x [Casters](https://shop.4tronix.co.uk/collections/motors/products/pololu-plastic-ball-caster-1-2)
+ * 2 Wheels pinched from my old Mecano set
+ * Plywood.
  
 ### Construction notes
   * I've used pins 13-16 to connect up the motor controller (H-bridge), using other was tricky as some of them are used by the LED display , see  https://makecode.microbit.org/device/pins.
