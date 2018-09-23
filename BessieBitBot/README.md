@@ -1,3 +1,3 @@
 # *Bessie* the Bit Bot
 
-Click [here](bessie.md) to go to the main page for *Bessie*
+Click [here](Bessie.md) to go to the main page for *Bessie*
