@@ -68,7 +68,20 @@ You may also find the following links helpful:
  * Interface with *Project C*?
  
 
+## *Bessie* construction
 
+*Bessie* is built from 
+ * 2 [Motors](https://shop.4tronix.co.uk/collections/motors/products/n20-micro-metal-geared-motor-6v-various-speeds?variant=34222701121)
+ * 1 [Dual H bridge](https://www.umtmedia.com/products/dual-h-bridge-l298n-stepper-motor-driver-controller-board-module-arduino-pi?variant=51500869844)
+ * 1  LM1117T 3.3V voltage regulator (available on ebay and elsewhere). I've used a 3 pin board (see photo above, middle of side with a red LED)
+ * 3 x 1.5 V battery pack (pinched from an old LED light string set)
+ * 1 [Breadboard adapter for Micro:bit](https://coolcomponents.co.uk/collections/micro-bit/products/bbc-micro-bit-breadboard-adapter)
+ * A cheap breadboard is used to seat the breadboard adapter on *Bessie*, but it isn't used (and isn't good at making connections anyway)
+ 
+### Construction notes
+  * I've used pins 13-16 to connect up the motor controller (H-bridge), using other was tricky as some of them are used by the LED display , see  https://makecode.microbit.org/device/pins.
+  * Be **very** careful connecting up the power for the Micro:bit. Check the voltage and polarity before inserting the Micro:bit into the Breadboard adapter.
+  
 ## Miscellaneous
 
 [v1 of the project on makecode](https://makecode.microbit.org/_cH6LK00xp0cD) (not compatible with v0.14) 
