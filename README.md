@@ -1,2 +1,2 @@
 # BroadclystCodeClub
-Code and tools for the afterschool club at Broadclyst Community Primary School
+Code and tools put together for the afterschool club at Broadclyst Community Primary School in 2018-19
