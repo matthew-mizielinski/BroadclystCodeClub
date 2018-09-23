@@ -1,8 +1,9 @@
 
 # *Bessie* the Bit Bot
-*Dr Miz, September 2018*
+*Matthew Mizielinski (a.k.a. Dr Miz), September 2018*
 
-Over the summer *Bessie*, previously controlled by a raspberry pi, has been rebuilt to work with a [Micro:bit](https://microbit.org)
+Over the summer *Bessie*, previously controlled by a raspberry pi, has been rebuilt to work with a [Micro:bit](https://microbit.org), and is now similar to [other micro:bit robots](https://coolcomponents.co.uk/products/move-mini-buggy-kit-excluding-microbit), but with plenty of capacity for expansion.
+
 
 ![alt text](images/bessie.jpg "Bessie the Bit Bot")
 
@@ -64,6 +65,7 @@ You may also find the following links helpful:
  * Javascript option?
  * Python coding via https://microbit-micropython.readthedocs.io/en/latest/
  * Add a speaker?
+ * Add Neopixels along edges?
  * Use of built in compass, accelerometer>
  * Interface with *Project C*?
  
@@ -77,6 +79,7 @@ You may also find the following links helpful:
  * 3 x 1.5 V battery pack (pinched from an old LED light string set)
  * 1 [Breadboard adapter for Micro:bit](https://coolcomponents.co.uk/collections/micro-bit/products/bbc-micro-bit-breadboard-adapter)
  * A cheap breadboard is used to seat the breadboard adapter on *Bessie*, but it isn't used (and isn't good at making connections anyway)
+ * 2 x [Casters](https://shop.4tronix.co.uk/collections/motors/products/pololu-plastic-ball-caster-1-2)
  
 ### Construction notes
   * I've used pins 13-16 to connect up the motor controller (H-bridge), using other was tricky as some of them are used by the LED display , see  https://makecode.microbit.org/device/pins.
