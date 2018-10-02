@@ -40,7 +40,9 @@ To control *Bessie* accurately you'll need to work out how long, i.e. how many m
  
 ## Getting started
 
- 1. In a new tab open **[this link](https://makecode.microbit.org/_Rqtes73Du51s)** (hold down Ctrl and click or use the right click menu).
+
+[//]: # "1. In a new tab open **[this link](https://makecode.microbit.org/_Rqtes73Du51s)** (hold down Ctrl and click or use the right click menu)."
+ 1. In a new tab open **[this link](https://makecode.microbit.org/_fPoHmU2CehAL)** (hold down Ctrl and click or use the right click menu).
  2. Click on one of the **Edit** buttons to load the full makecode pages.
  3. When you are ready **Download** your code as a *.hex* file, connect up to *Bessie* using the USB cable, and save it onto the `MICROBIT` drive.
  4. Disconnect *Bessie* and use the buttons to run your code
