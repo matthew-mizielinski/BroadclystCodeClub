@@ -66,7 +66,6 @@ You may also find the following links helpful:
 
  * Javascript option?
  * Python coding via https://microbit-micropython.readthedocs.io/en/latest/
- * Add a speaker?
  * Add Neopixels along edges?
  * Use of built in compass, accelerometer>
  * Interface with *Project C*?
@@ -78,15 +77,18 @@ You may also find the following links helpful:
  * 2 [Motors](https://shop.4tronix.co.uk/collections/motors/products/n20-micro-metal-geared-motor-6v-various-speeds?variant=34222701121)
  * 1 [Dual H bridge](https://www.umtmedia.com/products/dual-h-bridge-l298n-stepper-motor-driver-controller-board-module-arduino-pi?variant=51500869844)
  * 1  LM1117T 3.3V voltage regulator (available on ebay and elsewhere). I've used a 3 pin board (see photo above, middle of side with a red LED)
- * 3 x 1.5 V battery pack (pinched from an old LED light string set)
+ * 4 x 1.5 V battery pack 
  * 1 [Breadboard adapter for Micro:bit](https://coolcomponents.co.uk/collections/micro-bit/products/bbc-micro-bit-breadboard-adapter)
  * A cheap breadboard is used to seat the breadboard adapter on *Bessie*, but it isn't used (and isn't good at making connections anyway)
  * 2 x [Casters](https://shop.4tronix.co.uk/collections/motors/products/pololu-plastic-ball-caster-1-2)
  * 2 Wheels pinched from my old Mecano set
  * Plywood.
+ * An LM386 amplifier board [like this one](https://www.ebay.co.uk/itm/LM386-DC-5V-12V-Mini-Micro-Audio-Amplifier-Module-Board-Mono-AMP-Module-OE/263759625537)
+ * A 1/4 W speaker [like this one](https://www.ebay.co.uk/itm/Small-Green-Loud-Speaker-0-25W-8Ohm-40mm-Dia-x-10mm-thick/221942818222)
  
 ### Construction notes
   * I've used pins 13-16 to connect up the motor controller (H-bridge), using other was tricky as some of them are used by the LED display , see  https://makecode.microbit.org/device/pins.
+  * Pin 1 is used to connect to the amplifier for the speaker, and the amplifier takes the full 6V, rather than using the 5V regulated from the H bridge or the 3.3 V regulator used to power the microbit.
   * Be **very** careful connecting up the power for the Micro:bit. Check the voltage and polarity before inserting the Micro:bit into the Breadboard adapter.
   
 ## Miscellaneous
