@@ -12,7 +12,7 @@ Over the summer *Bessie*, previously controlled by a raspberry pi, has been rebu
 Before you can load your code into *Bessie* you need to give her a face. Take a card (old business card size) and decorate it
 
 ## Make code
-There is a simple set of functions for controlling *Bessie* in [this makecode project](https://makecode.microbit.org/_Rqtes73Du51s) 
+There is a simple set of functions for controlling *Bessie* in [this makecode project](https://makecode.microbit.org/_fPoHmU2CehAL) 
 You can use the following functions;
 
 | Function   | LED letter | Purpose                             |
