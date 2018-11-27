@@ -14,6 +14,16 @@ Mu is a relatively simple editor that can compile and load code onto a connected
 animation on their front page linked below).
 
 
+## Possible activities
+
+Every one gets a go at coding, typing the same thing as demonstrated.
+
+ * Spirit level
+ * compass
+ * accelerometer
+ * accelerometer & compass over radio (data logger) 
+
+
 ## Links
 
 * Mu: https://codewith.mu/
