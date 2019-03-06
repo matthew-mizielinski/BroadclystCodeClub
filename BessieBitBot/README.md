@@ -63,7 +63,9 @@ You may also find the following links helpful:
 3. Write some code that makes *Bessie* move in a triangle, that with the changes of a single number can make *Bessie* move in a square (or a pentagon, hexagon, etc.).
     Hints: the internal angle of a polygon is **180 * (n-2) / n)**, where **n** is the number of vertices. You'll need to use a for loop.
  
+## Bessie with sensors
 
+https://makecode.microbit.org/_16M35mF3wiAW
 
 ## Future thoughts
 
