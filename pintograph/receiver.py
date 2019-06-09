@@ -5,8 +5,15 @@ Radio messages are to be used to modify the speeds of each motor (untested)
 from microbit import *
 import radio
 
-# the bit messages that need to be sent to the PCF8574
-# in order to move the stepper motors
+# MOTORS contains the bit messages that need to be sent to the PCF8574
+# in order to move the stepper motors.
+# Each hex digit, or word, indicates the state on the four pins used by the 
+# ULN2003 driver;
+# word : pin states
+# 9    : 1 0 0 1
+# C    : 1 1 0 0
+# 6    : 0 1 1 0
+# 3    : 0 0 1 1
 MOTORS = [[b'\x99', b'\x9C', b'\x96', b'\x93'],
           [b'\xC9', b'\xCC', b'\xC6', b'\xC3'],
           [b'\x69', b'\x6C', b'\x66', b'\x63'],
@@ -20,14 +27,14 @@ def _speed_action(i, speed, mi):
     """
     Return the index in MOTORS of the next state to be used.
     """
+    result = mi
     # Need to avoid speeds of 1, -1 resulting in zero movement
     if i % (abs(speed) + 1) != 0:
         if speed > 0:
-            result =  (mi + 1) % NUM_STEPPER_STATES
+            result = (mi + 1) % NUM_STEPPER_STATES
         elif speed < 0:
             result = (mi - 1) % NUM_STEPPER_STATES
-    else:
-        result = mi
+
     return result
 
 
