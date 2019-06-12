@@ -99,3 +99,8 @@ https://makecode.microbit.org/_16M35mF3wiAW
 ## Miscellaneous
 
 [v1 of the project on makecode](https://makecode.microbit.org/_cH6LK00xp0cD) (not compatible with v0.14) 
+
+
+## Bessie with ldr
+
+https://makecode.microbit.org/_djqdM95u7CUo
