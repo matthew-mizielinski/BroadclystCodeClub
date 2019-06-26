@@ -33,7 +33,7 @@ See [makecode page](https://makecode.microbit.org/_FqsY89Jpgas4) or [javascript 
 
 Another feature of the microbit is the way that the radio can be used to pass information between micro:bits.
 
-In [this makecode project](https://makecode.microbit.org/_FavDR8h4iKkT) I've set up the microbit to use the same code to read the pitch and roll, but this is sent over radio to another microbit, which then sets the colour of the microbit.
+In [this makecode project](https://makecode.microbit.org/_7LiF20KJx0Ld) I've set up the microbit to use the same code to read the pitch and roll, but this is sent over radio to another microbit, which then sets the colour of the microbit.
 
 The intention is to create pairs of microbits, in different radio groups, that are sending messages to each other and then ask the students to explain what is going on. Once they've worked it out show the code!
 
