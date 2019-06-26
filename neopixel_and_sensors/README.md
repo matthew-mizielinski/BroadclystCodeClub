@@ -9,7 +9,7 @@
  1. "Import" the neopixel extension
  1. On start : set the neopixel strip to have a single led connected to `P0`
  1. create `pitch` and `roll` variables
- 1. create a function to get the pitch (input.. more section, look for `rotation` block) and map the number from 0..360 to 0..120 *
+ 1. create a function to get the pitch (input.. more section, look for `rotation` block) and map the number from -180..180 to 0..120 *
  1. copy get pitch function to get roll, changing the variable that is updated `pitch` -> `roll` and the angle read by the `rotation` block  
  1. In forever loop
    * get pitch
@@ -38,3 +38,9 @@ In [this makecode project](https://makecode.microbit.org/_7LiF20KJx0Ld) I've set
 The intention is to create pairs of microbits, in different radio groups, that are sending messages to each other and then ask the students to explain what is going on. Once they've worked it out show the code!
 
 [javascript code](neopixel_radio.js)
+
+## Radio activity
+
+With one microbit connected to the ZIP Halo (24 neopixel ring) and loaded with [This code](https://makecode.microbit.org/_h5R0XMYfWeXx)
+adjust the code from the first activity to send a radio message containing the colour and the roll [green example](https://makecode.microbit.org/_KWwaLt9TXCkX).
+
