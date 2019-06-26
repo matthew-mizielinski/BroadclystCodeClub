@@ -1,9 +1,9 @@
 // Need to import Neopixel extension first
 function get_pitch () {
-    pitch = Math.map(input.rotation(Rotation.Pitch), 0, 360, 0, 120)
+    pitch = Math.map(input.rotation(Rotation.Pitch), -180, 180, 0, 120)
 }
 function get_roll () {
-    roll = Math.map(input.rotation(Rotation.Roll), 0, 360, 0, 120)
+    roll = Math.map(input.rotation(Rotation.Roll), -180, 180, 0, 120)
 }
 let roll = 0
 let pitch = 0
