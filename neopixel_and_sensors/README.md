@@ -39,8 +39,7 @@ The intention is to create pairs of microbits, in different radio groups, that a
 
 [javascript code](neopixel_radio.js)
 
-## Radio activity
+## Another radio activity
 
-With one microbit connected to the ZIP Halo (24 neopixel ring) and loaded with [This code](https://makecode.microbit.org/_h5R0XMYfWeXx)
-adjust the code from the first activity to send a radio message containing the colour and the roll [green example](https://makecode.microbit.org/_KWwaLt9TXCkX).
-
+With one microbit connected to the ZIP Halo (24 neopixel ring) and loaded with [this code](https://makecode.microbit.org/_h5R0XMYfWeXx)
+adjust the code from the first activity to send a radio message containing the "colour" and the value of the "roll" variable each cycle of the forever loop ([green example](https://makecode.microbit.org/_KWwaLt9TXCkX)). Then with three microbits sending messages with colour set to either `red`, `green` or `blue`.
