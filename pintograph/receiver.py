@@ -63,14 +63,16 @@ def run(address, nsteps, speed1=6, speed2=6):
 
 def update_speeds(speed1, speed2):
     while True:
-        message = radio.receive()
+        message = radio.receive_full()()
         if message is None:
             break
-        motor, speed = interpret_packet_alue_pair(message)
+        motor, speed = interpret_packet_value_pair(message[0])
+        if motor is None:
+            return speed1, speed2
         if motor == 'left':
-            speed1 = int(speed)
-        elif motor == 'right':
             speed2 = int(speed)
+        elif motor == 'right':
+            speed1 = int(speed)
     return speed1, speed2
 
 
@@ -108,6 +110,7 @@ if __name__ == '__main__':
     i2c.init()
     # Switch radio on.
     radio.on()
+    radio.config(group=42)
     #initial speeds
     speed1 = 2
     speed2 = -1
@@ -116,6 +119,7 @@ if __name__ == '__main__':
     while True:
         # Update speeds from any radio messages
         speed1, speed2 = update_speeds(speed1, speed2)
+        print(speed1, speed2)
         # look for i2c devices
         devices = i2c.scan()
         # If the PCF8754 is found
