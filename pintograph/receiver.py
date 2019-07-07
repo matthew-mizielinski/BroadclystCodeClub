@@ -4,6 +4,7 @@ Radio messages are to be used to modify the speeds of each motor (untested)
 """
 from microbit import *
 import radio
+import ustruct
 
 # MOTORS contains the bit messages that need to be sent to the PCF8574
 # in order to move the stepper motors.
@@ -65,12 +66,41 @@ def update_speeds(speed1, speed2):
         message = radio.receive()
         if message is None:
             break
-        motor, speed = message.split()
-        if motor == '1':
+        motor, speed = interpret_packet_alue_pair(message)
+        if motor == 'left':
             speed1 = int(speed)
-        elif motor == '2':
+        elif motor == 'right':
             speed2 = int(speed)
     return speed1, speed2
+
+
+def interpret_packet_value_pair(data):
+    """
+    Return a name, value pair extracted from the 
+    data packet sent by Makecode Radio.
+    Adapted from https://github.com/rhubarbdog/microbit-radio/blob/master/make_radio.py
+    
+    Paramters
+    ---------
+    data : bytes
+        Packet payload
+        
+    Returns
+    -------
+    : str
+        Name of value (or None if not a value 
+        pair packet)
+    : float
+        Value (or None if not a value pair packet)
+    """
+    if data is None:
+        return None, None
+    packet_type = int.from_bytes(data[3:4], 'little')
+    name = value = None
+    if packet_type == 5:
+        name = str(data[21:29], 'ascii').strip()
+        value = ustruct.unpack('<d', data[12:20])[0]
+    return name, value
 
 
 if __name__ == '__main__':
