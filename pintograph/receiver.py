@@ -63,7 +63,7 @@ def run(address, nsteps, speed1=6, speed2=6):
 
 def update_speeds(speed1, speed2):
     while True:
-        message = radio.receive_full()()
+        message = radio.receive_full()
         if message is None:
             break
         motor, speed = interpret_packet_value_pair(message[0])
