@@ -99,9 +99,14 @@ def interpret_packet_value_pair(data):
         return None, None
     packet_type = int.from_bytes(data[3:4], 'little')
     name = value = None
-    if packet_type == 5:
+    if packet_type ==  1:
+        name = str(data[17:], 'utf8') 
+        value = float(ustruct.unpack('<i', data[12:16])[0])
+    elif packet_type == 5:
         name = str(data[21:29], 'ascii').strip()
         value = ustruct.unpack('<d', data[12:20])[0]
+    else:
+        display.scroll('Package type {} not recognised'.format(packet_type))
     return name, value
 
 
