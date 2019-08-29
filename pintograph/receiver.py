@@ -1,6 +1,8 @@
 """
 Code to run two stepper motors via a PCF8574 I2C bus expander from a microbit.
-Radio messages are to be used to modify the speeds of each motor (untested)
+Radio messages are to be used to modify the speeds of each motor the code to 
+interpret the message contents as sent by the makecode blocks was taken from
+https://github.com/rhubarbdog/microbit-radio/blob/master/make_radio.py
 """
 from microbit import *
 import radio
@@ -106,7 +108,7 @@ def interpret_packet_value_pair(data):
         name = str(data[21:29], 'ascii').strip()
         value = ustruct.unpack('<d', data[12:20])[0]
     else:
-        display.scroll('Package type {} not recognised'.format(packet_type))
+        display.scroll('Packet type {} not recognised'.format(packet_type))
     return name, value
 
 
