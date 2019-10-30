@@ -1,7 +1,7 @@
-from microbit import pin0, sleep
+from microbit import pin1, sleep
 import neopixel
 
-np = neopixel.NeoPixel(pin0, 25)
+np = neopixel.NeoPixel(pin1, 25)
 
 colours = [
     (100, 0, 0),
