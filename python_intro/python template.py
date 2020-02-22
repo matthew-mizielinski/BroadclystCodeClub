@@ -9,13 +9,6 @@ from microbit import *
 # import neopixel
 
 
-def on_start():
-    """
-    Code to run once when the microbit starts up
-    """
-    display.scroll('Hello!')
-
-
 def forever1():
     """
     Code to run again and again
@@ -51,9 +44,13 @@ def on_shake():
     """
     pass
 
-# Run the on start routine
-on_start()
 
+# Code to run on start
+display.scroll('Hello!')
+
+# end of on start code
+
+# main program loop
 while True:
     # forever code
     forever1()
