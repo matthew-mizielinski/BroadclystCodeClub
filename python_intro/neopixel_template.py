@@ -13,7 +13,7 @@ def forever1():
     """
     Code to run again and again
     """
-    pass
+    sleep(200)
 
 
 def on_shake():
@@ -25,8 +25,8 @@ def on_shake():
 
 
 # on start code
-
-np_strip = neopixel.NeoPixel(pin0, 8)
+NPIXELS = 8
+np_strip = neopixel.NeoPixel(pin0, NPIXELS)
 
 # Colours for the neopixels
 brightness = 100
@@ -64,8 +64,8 @@ np_strip.show()
 # main program loop
 while True:
     # forever code
-    forever1()
+    forever()
 
     # shake
-    if accelerometer.current_gesture() == 'shake':
+    if accelerometer.was_gesture('shake'):
         on_shake()
