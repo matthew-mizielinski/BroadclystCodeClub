@@ -8,53 +8,31 @@ import radio
 # load neopixel library if we need it
 # import neopixel
 
+# Code to run on start
+radio.on()
+# transmit on channel 99
+radio.config(group=99)
+
+# end of on start code
+
 
 def forever():
     """
     Code to run again and again
     """
     radio.send('Hot potato')
-    sleep(sleep_time)
+    toggle_pixel(0, 0)
+    sleep(2000)
 
-
-def on_button_A():
+    
+def toggle_pixel(x, y):
     """
-    Code to run when button A is pressed on its own
+    If pixel is on set it to off and vice versa)
     """
-    sleep_time -= 1000
-
-
-def on_button_B():
-    """
-    Code to run when button B is pressed on its own
-    """
-    sleep_time += 1000
-
-
-def on_button_AB():
-    """
-    Code to run when button A+B are pressed together
-    """
-    sleep_time = 5000
-
-
-# Code to run on start
-radio.on()
-# transmit on channel 99
-radio.config(group=99)
-
-sleep_time = 5000
-
-# end of on start code
+    value = display.get_pixel(x, y)
+    display.set_pixel(x, y, abs(9 - value))
 
 # main program loop
 while True:
     # forever code
     forever()
-    # buttons
-    if button_a.is_pressed() and button_b.is_pressed():
-        on_button_AB()
-    elif button_a.is_pressed():
-        on_button_A()
-    elif button_b.is_pressed():
-        on_button_B()
