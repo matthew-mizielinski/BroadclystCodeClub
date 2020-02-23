@@ -38,14 +38,6 @@ def on_button_AB():
     sleep_time = 5000
 
 
-def on_shake():
-    """
-    Code to run when the accelerometer detects the
-    microbit is being shaken
-    """
-    pass
-
-
 # Code to run on start
 radio.on()
 # transmit on channel 99
@@ -66,6 +58,3 @@ while True:
         on_button_A()
     elif button_b.is_pressed():
         on_button_B()
-    # shake
-    if accelerometer.is_gesture('shake'):
-        on_shake()
