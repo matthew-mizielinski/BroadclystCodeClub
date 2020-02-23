@@ -25,7 +25,7 @@ def update_display(strength):
     strength_range = max_strength - min_strength
     
     num_pixels = 25 * (strength - min_strength) / strength_range
-
+    display.clear()
     for i in range(num_pixels):
         x = i % 5
         y = i // 5
