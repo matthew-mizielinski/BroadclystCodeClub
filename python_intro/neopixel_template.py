@@ -9,7 +9,7 @@ from microbit import *
 import neopixel
 
 
-def forever1():
+def forever():
     """
     Code to run again and again
     """
