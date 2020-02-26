@@ -27,11 +27,10 @@ def forever():
 
 
 def update_display(strength):
-    min_strength = -80
-    max_strength = -45
-    strength_range = max_strength - min_strength
-    
-    num_pixels = int(25.0 * (strength - min_strength) / strength_range)
+    """
+    update display depending on strength
+    """
+    num_pixels = int(0.5 * (strength - 90))
     display.clear()
     for i in range(num_pixels):
         x = i % 5
