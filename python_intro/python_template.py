@@ -9,7 +9,7 @@ from microbit import *
 # import neopixel
 
 
-def forever1():
+def forever():
     """
     Code to run again and again
     """
@@ -53,7 +53,7 @@ display.scroll('Hello!')
 # main program loop
 while True:
     # forever code
-    forever1()
+    forever()
     # buttons
     if button_a.is_pressed() and button_b.is_pressed():
         on_button_AB()
