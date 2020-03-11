@@ -30,7 +30,7 @@ def update_display(strength):
     """
     update display depending on strength
     """
-    num_pixels = int(0.5 * (strength - 90))
+    num_pixels = int(0.5 * (strength + 90))
     display.clear()
     for i in range(num_pixels):
         x = i % 5
