@@ -9,10 +9,11 @@ Project `D`, just `D` hereafter, is the fourth rover I've built after
 `D` is controlled via a microbit and has 4 motors driving a set of ``mechanum`` wheels.
 [Mechanum wheels](https://en.wikipedia.org/wiki/Mecanum_wheel) are interesting in that they 
 consist of a set of rollers on the face of each wheel set at 45 degrees to the edge of the
-wheel, and when rotated provide a force perpendicular to the wheel.
+wheel, and when rotated the overall effect is a force pushing perpendicular to the rollers,
+i.e. at 45 degrees.
 
 A set of mechanum wheels consists of two pairs of slightly different wheels one set being a mirror 
-image of the other
+image of the other, with opposite corners having the same orientation.
 
 There is a really nice set of diagrams of this [here](https://jellyfishbbhs.com/2018/11/30/mecanum-wheels/) (Team Jelly Fish blog)
 
@@ -33,7 +34,10 @@ with two bits for each. For example, forward would be
  | ---------- | --- | --------- | --- | ---------- | --- | ----------- | --- | --------------- |
  | 1          | 0   | 1         | 0   | 1          | 0   | 1           | 0   | = 170           |
 
+As noted above the wheels provide driving force at 45 degrees
 
+
+An example simple program that can run a sequence of different movements
 Code: https://makecode.microbit.org/_iDEHRkKefX8L
 
 <!---
